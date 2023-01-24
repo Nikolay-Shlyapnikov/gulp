@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title": "Frank RG" })
+
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="blog">
+                <div class="blog__control">
+                    <button class="show-or-remove-form button">Добавить пост</button>
+                    <button class="button delete-all">Очистить хранилище</button>
+                    <div class="add-post__overlay d-none">
+                    </div>
+                    <form class="add-post__form d-none" action="" method="post">
+                        <input class="form__input" name="title" type="text" placeholder="Введите заголовок поста">
+                        <textarea class="form__textarea" name="main-text" type="text" placeholder="Введите основной текст поста"></textarea>
+                        <button class="button add-post" type="button">Создать пост</button>
+                        <button class="button show-or-remove-form" type="button">Отмена</button>
+                    </form>
+                </div>
+                <div class="post__wrapper">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
